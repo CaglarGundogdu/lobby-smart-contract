@@ -1,0 +1,168 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_roomName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_capacity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_minEnrtyPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "createRoom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_roomName",
+						"type": "string"
+					}
+				],
+				"name": "enterRoom",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_roomName",
+						"type": "string"
+					}
+				],
+				"name": "playersInRoom",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "rooms",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "capacity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "minEntryPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_roomName",
+						"type": "string"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_rank1",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_rank2",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_rank3",
+						"type": "address"
+					}
+				],
+				"name": "shareRewards",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Lobby.sol": "Lobby"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Lobby.sol": {
+			"keccak256": "0xcf80b184bd8d905e21b573dc58785c60651fb02cdaf493d3e62037f518bd3da5",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://649082b294b2cbda76c4791c080c350828774ba02fc2510f5ac9a4bed354796c",
+				"dweb:/ipfs/QmUVMEQBNzgdSWfHnTL1hXhdrXci1dRKUsswGpH7bC8QP9"
+			]
+		}
+	},
+	"version": 1
+}
